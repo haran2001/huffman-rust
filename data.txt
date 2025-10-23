@@ -1,0 +1,5 @@
+Raspberry Pi (/paɪ/ PY) is a series of small single-board computers (SBCs) originally developed in the United Kingdom by the Raspberry Pi Foundation in collaboration with Broadcom. To commercialize the product and support its growing demand, the Foundation established a commercial entity, now known as Raspberry Pi Holdings.
+
+The Raspberry Pi was originally created to help teach computer science in schools, but gained popularity for many other uses due to its low cost, compact size, and flexibility. It is now used in areas such as industrial automation, robotics, home automation, IoT devices, and hobbyist projects.
+
+The company's products range from simple microcontrollers to computers that the company markets as being powerful enough to be used as a general purpose PC. Computers are built around a custom designed system on a chip and offer features such as HDMI video/audio output, USB ports, wireless networking, GPIO pins, and up to 16 GB of RAM. Storage is typically provided via microSD cards.
