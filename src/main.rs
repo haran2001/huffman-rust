@@ -23,6 +23,17 @@ fn integer_to_binary_vector(mut n: u32) -> BitVec {
     binary_vector
 }
 
+// pub fn create_encoding_table(tokens: &Vec<char>) -> HashMap<char, BitVec> {
+//     let mut encoding_table = HashMap::new();
+//     let mut count = 0;
+//     for token in tokens {
+//         encoding_table.insert(*token, integer_to_binary_vector(count));
+//         count += 1;
+//     }
+//     encoding_table
+// }
+
+
 pub fn create_encoding_table(tokens: &Vec<char>) -> HashMap<char, BitVec> {
     let mut encoding_table = HashMap::new();
     let mut count = 0;
@@ -64,6 +75,9 @@ pub fn decompress(token: &BitVec, decoding_table: &HashMap<BitVec, char>) -> cha
     decoding_table.get(token).unwrap().clone()
 }
 
+
+
+
 fn main() {
     let data = read_data("data.txt");
     let tokens = parse_data(&data);
@@ -79,15 +93,7 @@ fn main() {
     }
 
     println!("Compressed data: {:?}", compressed_data);
-    // Write compressed data to file
     fs::write("compressed.bin", compressed_data.to_bytes()).expect("Unable to write file");
     println!("Compressed data written to compressed.bin");
 
-    // let decompressed_data = BitVec::new();
-    // for bit in compressed_data.iter() {
-    //     let decompressed = decompress(&bit, &decoding_table);
-    //     decompressed_data.push(decompressed);
-    // }
-
-    // println!("Decompressed data: {:?}", decompressed_data);
 }
