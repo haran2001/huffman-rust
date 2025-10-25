@@ -1,6 +1,10 @@
 use bit_vec::BitVec;
 use std::fs;
 use std::collections::HashMap;
+use huffman::Tree;
+
+
+mod huffman;
 
 fn integer_to_binary_vector(mut n: u32) -> BitVec {
     if n == 0 {
